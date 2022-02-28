@@ -56,6 +56,7 @@ img{
     height: 45px;
     display:flex;
     align-content: center;
+    gap:5px;
     text-align: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -66,12 +67,20 @@ img{
 .sidebar{
     border-right: 1px solid gray;
 }
-
+.pointwrapper{
+    display: flex;
+    align-items: center;
+    gap:2px;
+}
+.pointwrapper i{
+    width:22px;
+}
 .cont-img{
     display: flex;
     align-items: center;
     gap:5px;
-    
+    flex-grow: 1;
+    margin-left: 9px; 
 }
 
 .cont-img img {
@@ -82,7 +91,15 @@ img{
 .wrapButton{
     display: flex;
     align-items: center;
+    width:80px;
 }
+.wrapButton .controls {
+    display: flex;
+    gap:10px;
+    align-items:center;
+    justify-content:space-between;
+}
+
 
 .sidecontent{
     flex-grow: 1;
@@ -130,8 +147,24 @@ img{
 .iconSearch i{
     padding: 4px;
     background-color: lightgray;
-    
-    
+
+}
+
+.user{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    background-color:#ddd;
+}
+.imgUser{
+    width: 40px;
+    border-radius: 999px;
+    overflow: hidden;
+}
+.infoChat{
+    font-size:12px;
+    height: 40px;
     
 }
 
