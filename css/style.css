@@ -1,3 +1,5 @@
+/* utilities */
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -6,6 +8,18 @@
 img{
     width: 100%;
 }
+
+.sent{
+    color: black ;
+    background-color:whitesmoke;
+}
+
+.received{
+    color: black ;
+    background-color:lightgreen;
+}
+
+/* body   */
 
 .container{
     max-width: 1024px;
@@ -34,21 +48,23 @@ img{
 
 .sidebar{
     min-width: 40%;
-    border: 1px solid blue;
     display:flex;
     flex-direction: column;
 }
 
 .navbar{
     height: 45px;
-    border: 1px solid yellowgreen;
     display:flex;
     align-content: center;
     text-align: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0px 5px;
+    background-color: #F0F2F5;
 
+}
+
+.sidebar{
+    border-right: 1px solid gray;
 }
 
 .cont-img{
@@ -63,24 +79,71 @@ img{
     overflow: hidden;
     border-radius:50px;
 }
-
-.sidecontent{
-    flex-grow: 1;
-    border: 1px solid lightpink;
-}
-
 .wrapButton{
     display: flex;
     align-items: center;
+}
+
+.sidecontent{
+    flex-grow: 1;
+    background-color:#EFEAE2;
+    
+}
+.notification{
+    min-height: 50px;
+    padding: 5px 5px;
+    background-color: rgb(121, 204, 231);
+}
+.notifiche{
+    display: flex;
+    align-items: center;
+    padding:10px 0;
+    gap:5px;
+}
+.contIcon{
+    border-radius:9999px;
+    background-color:white;
+    color:rgb(121, 204, 231);
+    text-align:center;
+    padding: 8px;
+}
+.contNotifiche{
+    display: flex;
+    flex-direction: column;
+    align-items: start;  
+    gap:2px;
+}
+.textNews{
+    font-weight:bold;
+    font-size:14px;
+}
+.subtitleNews{
+    font-size:12px;
+    text-decoration: underline;
+    color:gray;
+}
+
+.iconSearch i{
+    padding: 1px;
+    background-color: red;
+    height:20.4px;
+    
 }
 
 /* section right */
 
 .menuChat{
     flex-grow: 1;
-    border: 1px solid ;
     display:flex;
     flex-direction: column;
+}
+.findUser{
+    padding:10px;
+   
+}
+
+.iconSearch input{
+    width:90%;
 }
 .infoUser{
     display: flex;
