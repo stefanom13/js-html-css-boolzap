@@ -122,11 +122,16 @@ img{
     text-decoration: underline;
     color:gray;
 }
+.iconSearch{
+    display: flex;
+    align-items: center;
+}
 
 .iconSearch i{
-    padding: 1px;
-    background-color: red;
-    height:20.4px;
+    padding: 4px;
+    background-color: lightgray;
+    
+    
     
 }
 
@@ -144,6 +149,7 @@ img{
 
 .iconSearch input{
     width:90%;
+    padding:2px;
 }
 .infoUser{
     display: flex;
