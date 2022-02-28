@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+img{
+    width: 100%;
+}
 
 .container{
     max-width: 1024px;
@@ -16,12 +19,12 @@
     flex-direction: column;
 }
 
-.navbar{
+/* .navbar{
     border: 1px solid red ;
     height: 50px;
     display:flex;
     justify-content: space-between;
-}
+} */
 
 .mainContainer{
     flex-grow: 1;
@@ -32,10 +35,67 @@
 .sidebar{
     min-width: 40%;
     border: 1px solid blue;
+    display:flex;
+    flex-direction: column;
 }
+
+.navbar{
+    height: 45px;
+    border: 1px solid yellowgreen;
+    display:flex;
+    align-content: center;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 5px;
+
+}
+
+.cont-img{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    
+}
+
+.cont-img img {
+    width:25px;
+    overflow: hidden;
+    border-radius:50px;
+}
+
+.sidecontent{
+    flex-grow: 1;
+    border: 1px solid lightpink;
+}
+
+.wrapButton{
+    display: flex;
+    align-items: center;
+}
+
+/* section right */
+
 .menuChat{
     flex-grow: 1;
-    border: 1px solid violet;
+    border: 1px solid ;
+    display:flex;
+    flex-direction: column;
 }
+.infoUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 4px;
+    
+}
+.infoUser h5{
+    text-align: left;
+}
+.ultimoAccesso{
+    font-size:12px;    
+}
+
+
 
 
