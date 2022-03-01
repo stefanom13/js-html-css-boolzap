@@ -47,9 +47,10 @@ img{
 }
 
 .sidebar{
-    min-width: 40%;
+    min-width: 300px;
     display:flex;
     flex-direction: column;
+    background-color:white;
 }
 
 .navbar{
@@ -61,6 +62,7 @@ img{
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: #F0F2F5;
+    
 
 }
 
@@ -91,25 +93,27 @@ img{
 .wrapButton{
     display: flex;
     align-items: center;
-    width:80px;
+   padding-right: 10px;
 }
 .wrapButton .controls {
     display: flex;
-    gap:10px;
+    gap:20px;
     align-items:center;
     justify-content:space-between;
 }
-
-
 .sidecontent{
     flex-grow: 1;
+}
+
+
+.sidecontentChat{
     background-color:#EFEAE2;
     
 }
 .notification{
     min-height: 50px;
     padding: 5px 5px;
-    background-color: rgb(121, 204, 231);
+    background-color: #53BDEB;
 }
 .notifiche{
     display: flex;
@@ -131,13 +135,13 @@ img{
     gap:2px;
 }
 .textNews{
-    font-weight:bold;
+    font: weight 600px;
     font-size:14px;
 }
 .subtitleNews{
-    font-size:12px;
+    font-size:10px;
     text-decoration: underline;
-    color:gray;
+    
 }
 .iconSearch{
     display: flex;
@@ -155,7 +159,8 @@ img{
     display: flex;
     align-items: center;
     gap:10px;
-    background-color:#ddd;
+    background-color:white;
+    flex-grow: 1;
 }
 .imgUser{
     width: 40px;
@@ -164,8 +169,29 @@ img{
 }
 .infoChat{
     font-size:12px;
-    height: 40px;
+    height: 39px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
     
+}
+.infoChatUser{
+    display: flex;
+    flex-direction: column;
+}
+.message{
+    font-size:10px;
+    padding-top:10px 0px;
+}
+
+.chatArchiviate{
+    padding: 8px 0px;
+    margin-left: 18px;
+    display: flex;
+    flex-direction: row;
+    gap:20px
 }
 
 /* section right */
@@ -174,6 +200,7 @@ img{
     flex-grow: 1;
     display:flex;
     flex-direction: column;
+    min-width: 300px;
 }
 .findUser{
     padding:10px;
@@ -198,6 +225,23 @@ img{
     font-size:12px;    
 }
 
-
-
-
+.inputMessage{
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+}
+.inputMessage{
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+}
+.form-input{
+    flex-grow: 1;
+}
+.form-message{
+    width:100%;
+    padding: 5px;
+    border-radius: 5px;
+    
+    
+}

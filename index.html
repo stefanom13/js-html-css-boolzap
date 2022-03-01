@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolzap</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,11 +17,7 @@
         <main class="mainContainer">
             <div class="sidebar">
                 <header class="navbar navSidebar">
-                    <div class="pointwrapper">
-                        <i class="fas fa-circle circle-red"></i>
-                        <i class="fas fa-circle circle-yellow"></i>
-                        <i class="fas fa-circle circle-green"></i>
-                      </div>
+                    
                     <figure class="cont-img">
                         <img src="https://picsum.photos/200" alt="">
                         <span>Elena</span>
@@ -32,7 +29,6 @@
                             <i class="fas fa-chevron-down"></i>
                           </div>
                     </div>
-                    
                 </header>
                 <div class="sidecontent">
                     <div class="notification">
@@ -54,17 +50,28 @@
                             <input type="text" name="" id="" placeholder="Cerca o inizia una nuova chat">
                         </div>
                     </div>
-
+                    <div class="chatArchiviate">
+                        <span>icona</span>
+                        <p>Archiviate</p>
+                    </div>
                     <div class="user">
                         <div class="imgUser">
                             <img src="https://picsum.photos/200" alt="">
                         </div>
                         <div class="infoChat">
-                            <h4>Elena</h4>
-                            <span class="" >Tutto fatto</span>
+                            <div>
+                                <h4>Elena</h4>
+                                <span class="message" ><span>icona</span> Tutto fatto</span>
+                            </div>
+                            <div class="infoChatUser">
+                                <span>orario</span>
+                                <span>icona</span>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
+            
             </div>
 
             <div class="menuChat">
@@ -84,8 +91,22 @@
                     </div>
                 </header>
 
-                <div class="sidecontent">
-                    
+                <div class="sidecontent sidecontentChat">
+                    <!-- chat -->
+                </div>
+
+                <div class="inputMessage">
+                    <div>
+                        icona
+                    </div>
+
+                    <div class="form-input">
+                        <input type="text" class="form-message" name="" id="" placeholder="Inserisci un messaggio">
+                    </div>
+
+                    <div>
+                        icona
+                    </div>
                 </div>
 
             </div>
