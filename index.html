@@ -1,119 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolzap</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css"
+        integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <section class="cont-background">
+        <div class="background">
+            <section id="app" class="container">
 
-    <section id="app" class="container">
+                <main class="mainContainer">
+                    <div class="sidebar">
+                        <header class="navbar navSidebar">
 
-        <main class="mainContainer">
-            <div class="sidebar">
-                <header class="navbar navSidebar">
-                    
-                    <figure class="cont-img">
-                        <img src="https://picsum.photos/200" alt="">
-                        <span>Elena</span>
-                    </figure>
-                    <div class="wrapButton">
-                        <div class="controls">
-                            <i class="fas fa-circle-notch"></i>
-                            <i class="fas fa-pen"></i>
-                            <i class="fas fa-chevron-down"></i>
-                          </div>
-                    </div>
-                </header>
-                <div class="sidecontent">
-                    <div class="notification">
-                        <figure class=" notifiche">
-                            <div class="contIcon">
-                                <i class="fa-solid fa-microphone-lines-slash"></i>
+                            <figure class="cont-img">
+                                <img src="https://picsum.photos/200" alt="">
+
+                            </figure>
+                            <div class="wrapButton">
+                                <div class="controls">
+                                    <i class="fas fa-circle-notch"></i>
+                                    <i class="fa-solid fa-comment"></i>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
                             </div>
-                            <div class="contNotifiche">
-                                <span class="textNews" >Ricevi le notifiche di nuovi utenti</span>
-                                <span class="subtitleNews">Attiva notifiche desktop</span>
+                        </header>
+                        <div class="sidecontent">
+                            <div class="notification">
+                                <figure class=" notifiche">
+                                    <div class="contIcon">
+                                        <i class="fa-solid fa-microphone-lines-slash"></i>
+                                    </div>
+                                    <div class="contNotifiche">
+                                        <span class="textNews">Ricevi le notifiche di nuovi utenti</span>
+                                        <span class="subtitleNews">Attiva notifiche desktop</span>
+                                    </div>
+                                </figure>
                             </div>
-                        </figure>
+
+                            <div class="findUser">
+
+                                <div class="iconSearch">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" name="" id="" placeholder="Cerca o inizia una nuova chat">
+                                </div>
+                            </div>
+                            <div class="chatArchiviate">
+                                <span><i class="fas fa-chevron-down"></i></span>
+                                <p class="taskArchiviate">Archiviate</p>
+                            </div>
+                            <div class="user">
+                                <div class="imgUser">
+                                    <img src="https://picsum.photos/200" alt="">
+                                </div>
+                                <div class="infoChat">
+                                    <div class="viewMessage">
+                                        <h4>Elena</h4>
+                                        <span class="message">
+                                            <span><i class="fa-solid fa-check"></i></span> Tutto fatto
+                                        </span>
+                                   </div>
+                                    <div class="infoChatUser">
+                                        <span>orario</span>
+                                        <span><i class="fa-solid fa-volume-xmark"></i></span>
+                                        <!--  -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="findUser">
-                    
-                        <div class="iconSearch">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" name="" id="" placeholder="Cerca o inizia una nuova chat">
+                    <div class="menuChat">
+
+                        <header class="navbar navMenuchat">
+
+                            <figure class="cont-img">
+                                <img src="https://picsum.photos/200" alt="">
+                                <div class="infoUser">
+                                    <h5>Michele</h5>
+                                    <span id="accesso" class="ultimoAccesso">Ultimo accesso oggi alle 10.32</span>
+                                </div>
+                            </figure>
+
+                            <div class="wrapButton">
+                                <div class="controls wrapControls">
+                                    <div class="chat-type">
+                                        <i class="fas fa-video"></i>
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="chat-command">
+                                        <i class="fas fa-search"></i>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+
+                        <div class="sidecontent sidecontentChat">
+                            <!-- chat -->
                         </div>
-                    </div>
-                    <div class="chatArchiviate">
-                        <span>icona</span>
-                        <p>Archiviate</p>
-                    </div>
-                    <div class="user">
-                        <div class="imgUser">
-                            <img src="https://picsum.photos/200" alt="">
-                        </div>
-                        <div class="infoChat">
+
+                        <div class="inputMessage">
                             <div>
-                                <h4>Elena</h4>
-                                <span class="message" ><span>icona</span> Tutto fatto</span>
+                                <i class="far fa-smile"></i>
+                                <i class="fas fa-paperclip"></i>
                             </div>
-                            <div class="infoChatUser">
-                                <span>orario</span>
-                                <span>icona</span>
+
+                            <div class="form-input">
+                                <input type="text" class="form-message" name="" id=""
+                                    placeholder="Inserisci un messaggio">
+                            </div>
+
+                            <div>
+                                <i class="fas fa-microphone"></i>
                             </div>
                         </div>
-                        
+
                     </div>
-                </div>
-            
-            </div>
+                </main>
 
-            <div class="menuChat">
-
-                <header class="navbar navMenuchat" >
-
-                    <figure class="cont-img">
-                        <img src="https://picsum.photos/200" alt="">
-                        <div class="infoUser">
-                            <h5>Michele</h5>
-                            <span id="accesso" class="ultimoAccesso">Ultimo accesso oggi alle 10.32</span>
-                        </div>
-                    </figure>
-
-                    <div class="wrapButton">
-                        button
-                    </div>
-                </header>
-
-                <div class="sidecontent sidecontentChat">
-                    <!-- chat -->
-                </div>
-
-                <div class="inputMessage">
-                    <div>
-                        icona
-                    </div>
-
-                    <div class="form-input">
-                        <input type="text" class="form-message" name="" id="" placeholder="Inserisci un messaggio">
-                    </div>
-
-                    <div>
-                        icona
-                    </div>
-                </div>
-
-            </div>
-        </main>
-
+            </section>
+        </div>
     </section>
-    
+
+
     <script src="js/app.js"></script>
 </body>
+
 </html>
