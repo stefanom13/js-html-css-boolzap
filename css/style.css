@@ -11,25 +11,26 @@ img {
 
 .sent {
   color: black;
-  background-color: whitesmoke;
+  background-color: #D9FDD3;
+  justify-content: flex-end;
 }
 
 .received {
   color: black;
-  background-color: lightgreen;
+  background-color: whitesmoke;
+  
 }
 
 /* body   */
-.cont-background{
-    width: 100vw;
-    height: 100vh;
-    background-color: #DFE0DE;  
-    
+.cont-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: #dfe0de;
 }
-.background{
-    height: 120px;
-    background-color: #00A884;
-    padding:45px;
+.background {
+  height: 120px;
+  background-color: #00a884;
+  padding: 45px;
 }
 .container {
   max-width: 1024px;
@@ -54,7 +55,8 @@ img {
 }
 
 .sidebar {
-  min-width: 300px;
+  width: 300px;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -106,9 +108,8 @@ img {
   justify-content: space-between;
   cursor: pointer;
 }
-.wrapControls{
-    font-size: 14px;
-    
+.wrapControls {
+  font-size: 14px;
 }
 
 .chat-type,
@@ -124,6 +125,11 @@ img {
 
 .sidecontentChat {
   background-color: #efeae2;
+}
+.messagesChat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .notification {
   min-height: 50px;
@@ -199,15 +205,14 @@ img {
   gap: 3px;
 }
 .message {
-    display: flex;
+  display: flex;
   font-size: 10px;
   gap: 5px;
-  
 }
-.viewMessage{
-    display: flex;
-    flex-direction: column;
-    gap:2px;
+.viewMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .chatArchiviate {
@@ -220,9 +225,9 @@ img {
   border-top: 1px solid #efeae2;
 }
 
-.taskArchiviate{
-    font-size: 12px;
-    font-weight: 700;
+.taskArchiviate {
+  font-size: 12px;
+  font-weight: 700;
 }
 
 /* section right */
