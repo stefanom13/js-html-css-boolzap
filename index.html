@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                         </header>
-                        <div class="sidecontent">
+                        <div class="cont_mess">
                             <div class="notification">
                                 <figure class=" notifiche">
                                     <div class="contIcon">
@@ -62,24 +62,26 @@
                                 <span><i class="fas fa-chevron-down"></i></span>
                                 <p class="taskArchiviate">Archiviate</p>
                             </div>
-                            <div v-for="element in contacts" class="user">
-                                <div class="imgUser">
-                                    <img :src="element.avatar" alt="">
-                                </div>
-                                <div class="infoChat">
-                                    <div class="viewMessage">
-                                        <h4 class="nameContact">{{element.name}}</h4>
-                                        <span class="messageContact">
-                                            <span><i class="fa-solid fa-check"></i></span> last message
-                                        </span>
-                                   </div>
-                                    <div class="infoChatUser">
-                                        <span>orario</span>
-                                        <span><i class="fa-solid fa-volume-xmark"></i></span>
-                                        <!--  -->
+                            <div class="cont-mess">
+                                <div v-for="element in contacts" class="user">
+                                    <div class="imgUser">
+                                        <img :src="element.avatar" alt="">
                                     </div>
+                                    <div class="infoChat">
+                                        <div class="viewMessage">
+                                            <h4 class="nameContact">{{element.name}}</h4>
+                                            <span class="messageContact">
+                                                <span><i class="fa-solid fa-check"></i></span> last message
+                                            </span>
+                                       </div>
+                                        <div class="infoChatUser">
+                                            <span class="lastConn">10:00</span>
+                                            <span><i class="fa-solid fa-volume-xmark"></i></span>
+                                            <!--  -->
+                                        </div>
+                                    </div>
+    
                                 </div>
-
                             </div>
                         </div>
 

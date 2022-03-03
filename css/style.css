@@ -25,7 +25,7 @@ img {
   max-width: 1024px;
   min-height: 600px;
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
 }
@@ -77,16 +77,6 @@ img {
   width: 22px;
 }
 
-.messageContact {
-  display: flex;
-  font-size: 10px;
-  gap: 5px;
-}
-.viewMessage {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
 
 .chatArchiviate {
   padding: 8px 0px;
@@ -102,6 +92,14 @@ img {
   font-size: 12px;
   font-weight: 700;
 }
+.cont_mess{
+  display: flex;
+  flex-direction: column;
+}
+.cont-mess{
+  flex-grow: 1;
+}
+
 
 /* section right */
 
@@ -115,9 +113,22 @@ img {
   padding: 10px;
 }
 
+.iconSearch {
+  display: flex;
+  align-items: center;
+  gap:2px;
+}
+
+.iconSearch i {
+  padding: 4px;
+  background-color: lightgray;
+  border-radius: 6px;
+}
+
 .iconSearch input {
   width: 90%;
   padding: 2px;
+  border-radius: 6px;
 }
 .infoUser {
   display: flex;
@@ -223,7 +234,7 @@ img {
   background-position: center;
 }
 .mess{
-  padding: 6px 8px;
+  padding: 3px 8px;
   border-radius: 11px;
   box-shadow: 0 2px 3px #aaa;
   font-size:14px;
@@ -280,15 +291,7 @@ img {
   font-size: 10px;
   text-decoration: underline;
 }
-.iconSearch {
-  display: flex;
-  align-items: center;
-}
 
-.iconSearch i {
-  padding: 4px;
-  background-color: lightgray;
-}
 
 .user {
   padding-left: 10px;
@@ -320,4 +323,21 @@ img {
   display: flex;
   flex-direction: column;
   gap: 3px;
+  padding-right: 10px;
+}
+.messageContact {
+  display: flex;
+  font-size: 10px;
+  gap: 5px;
+}
+.viewMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.nameContact {
+  font-size: 13px;
+}
+.lastConn{
+  font-size: 8px;
 }
