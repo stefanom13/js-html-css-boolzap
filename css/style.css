@@ -9,20 +9,6 @@ img {
  max-width: 100%;
 }
 
-.sent {
-  color: black;
-  background-color: #D9FDD3;
-  padding: 5px 7px;
-  border-radius: 194px;
-}
-
-.received {
-  color: black;
-  background-color: whitesmoke;
-  padding: 5px 7px;
-  border-radius: 194px;
-  
-}
 
 /* body   */
 .cont-background {
@@ -31,7 +17,7 @@ img {
   background-color: #dfe0de;
 }
 .background {
-  height: 120px;
+  height: 98px;
   background-color: #00a884;
   padding: 45px;
 }
@@ -63,6 +49,7 @@ img {
   display: flex;
   flex-direction: column;
   background-color: white;
+  border-right: 1px solid gray;
 }
 
 .navbar {
@@ -89,127 +76,7 @@ img {
 .pointwrapper i {
   width: 22px;
 }
-.cont-img {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  flex-grow: 1;
-  margin-left: 9px;
-}
 
-.cont-img img {
-  width: 35px;
-  overflow: hidden;
-  border-radius: 50px;
-}
-.wrapButton {
-  display: flex;
-  align-items: center;
-  padding-right: 10px;
-}
-.wrapButton .controls {
-  display: flex;
-  gap: 19px;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-}
-.wrapControls {
-  font-size: 14px;
-}
-
-.chat-type,
-.chat-command {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.sidecontent {
-  flex-grow: 1;
-}
-
-.sidecontentChat {
-  background-color: #efeae2;
-}
-.messagesChat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.notification {
-  min-height: 50px;
-  padding: 5px 5px;
-  background-color: #53bdeb;
-}
-.notifiche {
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-  gap: 5px;
-}
-.contIcon {
-  border-radius: 9999px;
-  background-color: white;
-  color: rgb(121, 204, 231);
-  text-align: center;
-  padding: 8px;
-}
-.contNotifiche {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 2px;
-}
-.textNews {
-  font: weight 600px;
-  font-size: 14px;
-}
-.subtitleNews {
-  font-size: 10px;
-  text-decoration: underline;
-}
-.iconSearch {
-  display: flex;
-  align-items: center;
-}
-
-.iconSearch i {
-  padding: 4px;
-  background-color: lightgray;
-}
-
-.user {
-  padding-left: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: white;
-  flex-grow: 1;
-  cursor: pointer;
-}
-.imgUser {
-  width: 30px;
-  border-radius: 5990px;
-  overflow: hidden;
-}
-.imgUser img {
-}
-.infoChat {
-  font-size: 12px;
-  height: 50px;
-  width: 100%;
-  border-bottom: 1px solid #efeae2;
-  border-top: 1px solid #efeae2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.infoChatUser {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
 .messageContact {
   display: flex;
   font-size: 10px;
@@ -272,6 +139,7 @@ img {
   display: flex;
   align-items: center;
   gap: 5px;
+  background-color: #f0f2f5;
 }
 .form-input {
   flex-grow: 1;
@@ -282,4 +150,174 @@ img {
   width: 100%;
   padding: 5px;
   border-radius: 5px;
+}
+.activeContact {
+  display: flex;
+}
+
+.activeC{
+
+}
+.activeInfo{
+  
+}
+
+.cont-img {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-grow: 1;
+  margin-left: 9px;
+}
+
+.cont-img img {
+  width: 35px;
+  max-width:34px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.wrapButton {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+.wrapButton .controls {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.wrapControls {
+  font-size: 14px;
+}
+
+.chat-type,
+.chat-command {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidecontent {
+  flex-grow: 1;
+
+}
+
+.sidecontentChat {
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+/* chat */
+.messagesChat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 25px;
+  flex-grow: 1;
+  background-image: url(../img/whtsImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mess{
+  padding: 6px 8px;
+  border-radius: 11px;
+  box-shadow: 0 2px 3px #aaa;
+  font-size:14px;
+  font-weight: 500;
+  max-width:70%;
+  display: flex;
+  text-align: center;
+}
+.sent {
+  background-color: #D9FDD3;
+  align-self: flex-end; 
+}
+
+.received {
+  align-self:flex-start;
+  background-color: whitesmoke;
+}
+/* con il selettore + prendiamo tutti gli elementi dopo i selettori selezionati */
+.mess.sent + .mess.received {
+  margin-top: 25px;
+} 
+.mess.received + .mess.sent{
+  margin-top: 25px;
+}
+.notification {
+  min-height: 50px;
+  padding: 5px 5px;
+  background-color: #53bdeb;
+}
+.notifiche {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  gap: 5px;
+}
+.contIcon {
+  border-radius: 9999px;
+  background-color: white;
+  color: rgb(121, 204, 231);
+  text-align: center;
+  padding: 8px;
+}
+.contNotifiche {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2px;
+}
+.textNews {
+  font: weight 600px;
+  font-size: 14px;
+}
+.subtitleNews {
+  font-size: 10px;
+  text-decoration: underline;
+}
+.iconSearch {
+  display: flex;
+  align-items: center;
+}
+
+.iconSearch i {
+  padding: 4px;
+  background-color: lightgray;
+}
+
+.user {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  flex-grow: 1;
+  cursor: pointer;
+}
+.imgUser {
+  width: 40px;
+  border-radius: 5990px;
+  overflow: hidden;
+}
+.imgUser img {
+}
+.infoChat {
+  font-size: 12px;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #efeae2;
+  border-top: 1px solid #efeae2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.infoChatUser {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
