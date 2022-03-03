@@ -62,15 +62,15 @@
                                 <span><i class="fas fa-chevron-down"></i></span>
                                 <p class="taskArchiviate">Archiviate</p>
                             </div>
-                            <div class="user">
+                            <div v-for="element in contacts" class="user">
                                 <div class="imgUser">
-                                    <img src="img/avatar5.png" alt="">
+                                    <img :src="element.avatar" alt="">
                                 </div>
                                 <div class="infoChat">
                                     <div class="viewMessage">
-                                        <h4 class="nameContact">Giulia</h4>
+                                        <h4 class="nameContact">{{element.name}}</h4>
                                         <span class="messageContact">
-                                            <span><i class="fa-solid fa-check"></i></span> Tutto fatto
+                                            <span><i class="fa-solid fa-check"></i></span> last message
                                         </span>
                                    </div>
                                     <div class="infoChatUser">
