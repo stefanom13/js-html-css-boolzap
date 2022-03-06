@@ -140,7 +140,11 @@ const app = new Vue({
         selectContact: function(user) {
             this.activeContact = user;
             console.log(this.activeContact);
-        }
+        },
+        getHours: function(date) {
+            const ora = date.split(' ')[1];
+            return ora.substring(0, 5);
+        },
     },
     created(){
         this.selectContact(this.contacts[0] )

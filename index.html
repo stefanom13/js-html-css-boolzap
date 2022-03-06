@@ -118,18 +118,11 @@
                         <!-- chat -->
                         <div class="sidecontent sidecontentChat">
                             <div class="messagesChat">
-                                <div class="mess received">
-                                    ricevuto
+                                <div v-for="element in activeContact.messages" class="mess" :class="element.status">
+                                    {{element.message}}
+                                    <span class="elementDate">{{ getHours (element.date) }}</span>
                                 </div>
-                                <div class=" mess sent">
-                                    Inviato
-                                </div>
-                                <div class="mess sent">
-                                    Inviato
-                                </div>
-                                <div class="mess received">
-                                    ricevuto
-                                </div>
+                               
                             </div>
 
                             <div class="inputMessage">
