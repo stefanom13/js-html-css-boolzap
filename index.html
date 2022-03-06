@@ -55,14 +55,14 @@
 
                                 <div class="iconSearch">
                                     <i class="fa-solid fa-magnifying-glass"></i>
-                                    <input type="text" name="" id="" placeholder="Cerca o inizia una nuova chat">
+                                    <input type="text"  v-model="search" @keyup="filtraContatti" placeholder="Cerca o inizia una nuova chat">
                                 </div>
                             </div>
                             <div class="chatArchiviate">
                                 <span><i class="fas fa-chevron-down"></i></span>
                                 <p class="taskArchiviate">Archiviate</p>
                             </div>
-                            <div v-for="(element,i) in contacts" @click="selectContact(element,i)" class="cont-mess" >
+                            <div v-for="(element,i) in contattiFiltrati" @click="selectContact(element,i)" class="cont-mess" >
                                 <div class="user">
                                     <div class="imgUser">
                                         <img :src="element.avatar" alt="">

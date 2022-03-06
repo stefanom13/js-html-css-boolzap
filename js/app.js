@@ -2,6 +2,7 @@ const app = new Vue({
     el:'#app',
     data:{
         newMessage:'',
+        search:'',
         activeIndex: 0,
         activeContact: null,
         contacts: [
@@ -138,6 +139,13 @@ const app = new Vue({
             
         ],
     },
+    computed: {
+        contattiFiltrati:function(){
+            return this.contacts.filter(el =>{
+                return el.name.toLowerCase().includes(this.search.toLowerCase())
+            })
+        }
+    },
     methods: {
         selectContact: function(user,index) {
             this.activeIndex = index;
@@ -190,6 +198,17 @@ const app = new Vue({
             }
             return newMessage
         },
+        filtraContatti:function(){
+            this.contacts.forEach( el => {
+                if (el.name.toLowerCase().includes(this.search.toLowerCase())) {
+                    
+                    el.visible = true
+                    
+                } else {
+                    el.visible = false
+                }
+            })
+        }
     },
     created(){
         this.selectContact(this.contacts[0],0 )
