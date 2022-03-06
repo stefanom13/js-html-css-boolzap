@@ -1,6 +1,8 @@
 const app = new Vue({
     el:'#app',
     data:{
+        newMessage:'',
+        activeIndex: 0,
         activeContact: null,
         contacts: [
             {
@@ -137,7 +139,8 @@ const app = new Vue({
         ],
     },
     methods: {
-        selectContact: function(user) {
+        selectContact: function(user,index) {
+            this.activeIndex = index;
             this.activeContact = user;
             console.log(this.activeContact);
         },
@@ -145,8 +148,50 @@ const app = new Vue({
             const ora = date.split(' ')[1];
             return ora.substring(0, 5);
         },
+        send:function(){
+
+            const newMessage = this.createMessage(this.newMessage,'sent');
+            const index = this.activeIndex;
+            // console.log(message);
+            // pushare messaggio nell array;
+            this.contacts[ index ].messages.push(newMessage);
+
+            // resettare l input  
+            this.newMessage = '';
+
+            // dopo un secondo dare risposta automatica
+            setTimeout( ()=>{
+
+                this.reply(index);
+                 
+            },1500);
+            
+        },
+
+        reply:function(index){
+            // const d = new Date();
+            // const message = {
+            //     status:'received',
+            //     message: 'Sorpresa',
+            //     date: `${d.getDate()}/${d.getMonth()+1}/${d.getFullYear()} ${d.getHours()}-${d.getMinutes()}-${d.getSeconds()}`,
+           const message = this.createMessage('ok','received');
+          
+            this.contacts[ index ].messages.push(message);
+        
+        },
+
+        createMessage:function(message,status){
+            const d = new Date();
+            const newMessage = {
+                status,
+                message,
+                date: `${d.getDate()}/${d.getMonth()+1}/${d.getFullYear()} ${d.getHours()}-${d.getMinutes()}-${d.getSeconds()}`,
+
+            }
+            return newMessage
+        },
     },
     created(){
-        this.selectContact(this.contacts[0] )
+        this.selectContact(this.contacts[0],0 )
     },
 })

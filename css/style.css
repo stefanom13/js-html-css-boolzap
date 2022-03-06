@@ -10,7 +10,7 @@ img {
 }
 
 .active{
-  background-color: gray;
+  color: lightgreen;
 }
 
 /* body   */
@@ -44,6 +44,7 @@ img {
   flex-grow: 1;
   display: flex;
   flex-direction: row;
+  
 }
 
 .sidebar {
@@ -235,9 +236,10 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
 }
 .mess{
-  padding: 3px 6px;
+  padding: 4px 6px;
   border-radius: 11px;
   box-shadow: 0 2px 3px #aaa;
   font-size:14px;
@@ -247,10 +249,11 @@ img {
   flex-direction: column;
   
   
+  
 }
 
 .elementDate{
-  padding-top: 2px;
+  padding-top: 1px;
   font-size:8px;
   text-align: end;
   

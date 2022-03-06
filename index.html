@@ -62,7 +62,7 @@
                                 <span><i class="fas fa-chevron-down"></i></span>
                                 <p class="taskArchiviate">Archiviate</p>
                             </div>
-                            <div v-for="element in contacts" @click="selectContact(element)" class="cont-mess" >
+                            <div v-for="(element,i) in contacts" @click="selectContact(element,i)" class="cont-mess" >
                                 <div class="user">
                                     <div class="imgUser">
                                         <img :src="element.avatar" alt="">
@@ -96,7 +96,7 @@
                                     <img src="img/avatar2.png" alt="">
 
                                     <div  class="infoUser activeInfo">
-                                        <h5 >{{activeContact.name}}</h5>
+                                        <h5 >{{contacts[activeIndex].name}}</h5>
                                         <span id="accesso" class="ultimoAccesso">Ultimo accesso oggi alle 10.32</span>
                                     </div>
                                 </figure>
@@ -118,11 +118,12 @@
                         <!-- chat -->
                         <div class="sidecontent sidecontentChat">
                             <div class="messagesChat">
-                                <div v-for="element in activeContact.messages" class="mess" :class="element.status">
+                                <div v-for="element in contacts[activeIndex].messages" class="mess" :class="element.status">
                                     {{element.message}}
                                     <span class="elementDate">{{ getHours (element.date) }}</span>
+                                    
                                 </div>
-                               
+                              
                             </div>
 
                             <div class="inputMessage">
@@ -132,7 +133,7 @@
                                 </div>
 
                                 <div class="form-input">
-                                    <input type="text" class="form-message" name="" id="" placeholder="Inserisci un messaggio">
+                                    <input type="text" class="form-message" v-model="newMessage" @keyup.enter="send" placeholder="Inserisci un messaggio">
                                 </div>
 
                                 <div>
