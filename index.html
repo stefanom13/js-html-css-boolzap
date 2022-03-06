@@ -62,8 +62,8 @@
                                 <span><i class="fas fa-chevron-down"></i></span>
                                 <p class="taskArchiviate">Archiviate</p>
                             </div>
-                            <div class="cont-mess">
-                                <div v-for="element in contacts" class="user">
+                            <div v-for="element in contacts" @click="selectContact(element)" class="cont-mess" >
+                                <div class="user">
                                     <div class="imgUser">
                                         <img :src="element.avatar" alt="">
                                     </div>
@@ -87,15 +87,16 @@
 
                     </div>
                     <!-- view right  -->
-                    <div class="menuChat">
+                    <div v-if="activeContact"  class="menuChat">
 
                         <header  class="navbar navMenuchat">
                             <div class="activeContact activeC">
                                 <figure  class="cont-img">
-                                    <img src="img/avatar1.png" alt="">
 
-                                    <div class="infoUser activeInfo">
-                                        <h5>Michele</h5>
+                                    <img src="img/avatar2.png" alt="">
+
+                                    <div  class="infoUser activeInfo">
+                                        <h5 >{{activeContact.name}}</h5>
                                         <span id="accesso" class="ultimoAccesso">Ultimo accesso oggi alle 10.32</span>
                                     </div>
                                 </figure>

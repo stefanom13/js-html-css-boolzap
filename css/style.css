@@ -9,6 +9,9 @@ img {
  max-width: 100%;
 }
 
+.active{
+  background-color: gray;
+}
 
 /* body   */
 .cont-background {
